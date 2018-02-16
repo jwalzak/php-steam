@@ -1,4 +1,4 @@
-# Ignore .ini files 
+# Ignore .ini files -- ini has the API key
 *.ini
 
 # Files I'm not sure if I want to keep or not.
