@@ -1,7 +1,7 @@
 <?php
 /* A simple app to using CURL to retrieve my Steam Account Data from the Steam servers */
-$ACCESS_KEY = $config['ACCESS_KEY']; // Steam API key
 $config = parse_ini_file('./api-keys.ini', true); // Gets the API keys
+$ACCESS_KEY = $config['ACCESS_KEY']; // Steam API key
 $STEAM_ID = $config['STEAM_ID']; // My steam ID
 
 // The URL to send use in the cURL request

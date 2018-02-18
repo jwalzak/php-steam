@@ -49,7 +49,7 @@ fetch('./ajax.php?action=steam', {
   .catch(e => console.error(`The player request did not go through. ${e}`))
 
 function convertTimestamp(timestamp) {
-  const d = new Date(timestamp * 1000), // Convert the passed timestamp to milliseconds
+  let d = new Date(timestamp * 1000), // Convert the passed timestamp to milliseconds
     yyyy = d.getFullYear(),
     mm = ('0' + (d.getMonth() + 1)).slice(-2), // Months are zero based. Add leading 0.
     dd = ('0' + d.getDate()).slice(-2), // Add leading 0.
